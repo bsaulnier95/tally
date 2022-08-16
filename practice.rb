@@ -1,6 +1,6 @@
 def tally
   print 'Tally your score: '
-  user_input = gets.chomp
+  user_input = gets.to_s.chomp
   if user_input == ' '
     puts @n += 1
   elsif user_input == 'end'
